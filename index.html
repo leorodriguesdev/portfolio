@@ -16,12 +16,19 @@
   <link rel="stylesheet" href="css/progress.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    #background-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+  </style>
 </head>
 
-<body id="body">   
-   <video id="background-video" autoplay loop muted>
-  <source src="./assests/videobg.mp4" type="video/mp4">
-</video>
+<body id="body">
   <header id="index">
     <nav class="navbar navbar-expand-lg">
       <div class="container hd">
@@ -57,38 +64,33 @@
     </nav>
   </header>
 
-  <section class="welcome container mt-5 ml-5">
-    <div class="d-flex flex-column justify-content-evenly align-items-start">
+  <section class="welcome pt-5 pb-5 pr-5">
+    <div class="d-flex flex-column justify-content-center align-items-start">
+      <div class="bg-opacity teste mt-5">
         <h2 class="text-section">Analista</h2>
         <h2 class="text-section">Desenvolvedor</h2>
         <h2 id="job-title" class="typing-effect text-section"> <span>&emsp;</span></h2>
         <br />
         <button class="btn btn-contato text-btn" onclick="">Contato</button>
-   
+      </div>
+
     </div>
-
-
   </section>
-
 
   <div class="div-apresentation d-flex flex-column justify-content-evenly">
     <div class="container d-flex flex-row justify-content-center align-items-center">
       <div class="col-sm-12 col-md-6 col-lg-6 mx-apresentation">
         <img class="img-apresentation" src="./assests/persona.png" alt="">
       </div>
-      <div class="text-apresentation col-sm-12 col-md-6 col-lg-6">
+      <div class="bg-opacity text-apresentation col-sm-12 col-md-6 col-lg-6 p-5">
         <h2 class="text-section">Front-end mobile</h2>
-        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nihil animi facilis in
-          distinctio repellat, nam est nisi fugit, non, veritatis veniam laboriosam autem minima perferendis quasi sit
-          quos tempore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nihil animi facilis in
-          distinctio repellat, nam est nisi fugit, non, veritatis veniam laboriosam autem minima perferendis quasi sit
-          quos tempore?</p>
+        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nihil animi facilis in distinctio repellat, nam est nisi fugit, non, veritatis veniam laboriosam autem minima perferendis quasi sit quos tempore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nihil animi facilis in distinctio repellat, nam est nisi fugit, non, veritatis veniam laboriosam autem minima perferendis quasi sit quos tempore?</p>
         <br />
       </div>
     </div>
   </div>
 
-  <div class="div-outher d-flex flex-column justify-content-evenly">
+  <div class="div-outher2 div-outher d-flex flex-column justify-content-evenly">
 
 
     <div class="container d-flex flex-row justify-content-start align-items-start">
@@ -97,28 +99,35 @@
     </div>
     <div class="container d-flex justify-content-between">
 
-      <div>
+      <div class="transform d-flex align-items-center justify-content-center flex-column bg-opacity  p-3 w-25">
         <img class="img-experience" src="./assests/exp.jpg" alt="">
-        <hr class="hr-exp border border-3 opacity-75">
+        <div class="d-flex flex-column justify-content-start align-items-start">
+          <hr class="hr-exp border border-3 opacity-75">
 
-        <p class="subtitle-experience">consultoria</p>
-        <p class="text-experience">Give a detailed description of the service being provided here.</p>
+          <p class="subtitle-experience">consultoria</p>
+          <p class="text-experience">Give a detailed description of the service being provided here.</p>
+        </div>
+        
       </div>
 
-      <div>
+      <div class="transform d-flex align-items-center justify-content-center flex-column bg-opacity  p-3 w-25">
         <img class="img-experience" src="./assests/exp.jpg" alt="">
-        <hr class="hr-exp border border-3 opacity-75">
+        <div class="d-flex flex-column justify-content-start align-items-start">
+          <hr class="hr-exp border border-3 opacity-75">
 
-        <p class="subtitle-experience">consultoria</p>
-        <p class="text-experience">Give a detailed description of the service being provided here.</p>
+          <p class="subtitle-experience">consultoria</p>
+          <p class="text-experience">Give a detailed description of the service being provided here.</p>
+        </div>
       </div>
 
-      <div>
+      <div class="transform d-flex align-items-center justify-content-center flex-column bg-opacity  p-3 w-25">
         <img class="img-experience" src="./assests/exp.jpg" alt="">
-        <hr class="hr-exp border border-3 opacity-75">
+        <div class="d-flex flex-column justify-content-start align-items-start">
+          <hr class="hr-exp border border-3 opacity-75">
 
-        <p class="subtitle-experience">consultoria</p>
-        <p class="text-experience">Give a detailed description of the service being provided here.</p>
+          <p class="subtitle-experience">consultoria</p>
+          <p class="text-experience">Give a detailed description of the service being provided here.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -462,19 +471,19 @@
     </div>
     <div class="container d-flex justify-content-between">
 
-      <div>
+      <div class="d-flex justify-content-center align-items-center flex-column bg-opacity transform p-5">
         <img class="img-busca" src="./assests/busca1.png" alt="">
         <p class="subtitle-busca">consultoria</p>
         <p class="text-experience">Give a detailed description of the service being provided here.</p>
       </div>
 
-      <div>
+      <div class="d-flex justify-content-center align-items-center flex-column bg-opacity transform p-5">
         <img class="img-busca" src="./assests/busca2.png" alt="">
         <p class="subtitle-busca">consultoria</p>
         <p class="text-experience">Give a detailed description of the service being provided here.</p>
       </div>
 
-      <div>
+      <div class="d-flex justify-content-center align-items-center flex-column bg-opacity transform p-5">
         <img class="img-busca" src="./assests/busca3.png" alt="">
         <p class="subtitle-busca">consultoria</p>
         <p class="text-experience">Give a detailed description of the service being provided here.</p>
@@ -535,10 +544,11 @@
     </div>
   </footer>
   <canvas id="galacticMonster" style="display: none;"></canvas>
-</body>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/monster.js"></script>
 <script src="./js/progress.js"></script>
+</body>
 
 </html>
